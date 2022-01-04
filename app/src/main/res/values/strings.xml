@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Mvvm</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="submit_btn_lbl">Submit</string>
     <string name="widget_name_lbl">Widget name</string>
