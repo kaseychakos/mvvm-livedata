@@ -8,10 +8,12 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class WidgetCustomAdapter extends RecyclerView.Adapter<WidgetCustomAdapter.ViewHolder>{
-    private Widget[] widgets;
+import java.util.ArrayList;
 
-    public WidgetCustomAdapter(Widget[] widgets) {
+public class WidgetCustomAdapter extends RecyclerView.Adapter<WidgetCustomAdapter.ViewHolder>{
+    private ArrayList<Widget> widgets;
+
+    public WidgetCustomAdapter(ArrayList<Widget> widgets) {
         this.widgets = widgets;
     }
 
@@ -43,13 +45,13 @@ public class WidgetCustomAdapter extends RecyclerView.Adapter<WidgetCustomAdapte
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.getTextView().setText(widgets[position].getName());
-        holder.getIdView().setText(widgets[position].getID());
+        holder.getTextView().setText(widgets.get(position).getName());
+        holder.getIdView().setText(widgets.get(position).getID());
     }
 
     @Override
     public int getItemCount() {
-        return widgets.length;
+        return widgets.size();
     }
 
 }
