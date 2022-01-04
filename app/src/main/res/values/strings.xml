@@ -4,5 +4,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="submit_btn_lbl">Submit</string>
     <string name="widget_name_lbl">Widget name</string>
+    <string name="person_name_lbl">Person\'s name</string>
+    <string name="description">This application is a mvvm architecture test. The data entry portion is one fragment while this portion and the RecyclerView below are another fragment. The list is populated with an example list item when the RecyclerView is created. The data entry portion updates the list using MutableLiveData.</string>
     <string name="lorem_ipsum_100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula turpis ex, in tempus tellus placerat a. In volutpat libero in odio pharetra, sed tempor augue vulputate. Nullam ut vestibulum diam, nec cursus ipsum. In iaculis luctus eros, at mattis arcu dignissim quis. Sed sit amet dictum lorem, dictum facilisis nibh. Pellentesque consequat nulla nibh, vel pretium lacus porta id. Donec ut risus ut sem fermentum vehicula ut quis massa. Sed leo sapien, rhoncus a dolor sed, mollis scelerisque justo. Duis facilisis id lectus non consectetur. Ut accumsan massa volutpat, molestie lorem lacinia, lobortis diam. Nulla ac sodales augue, in.</string>
 </resources>

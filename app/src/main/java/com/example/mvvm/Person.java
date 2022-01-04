@@ -1,10 +1,10 @@
 package com.example.mvvm;
 
-public class Widget {
+public class Person {
     private String name;
     private String ID;
 
-    Widget(String name, String ID) {
+    Person(String name, String ID) {
         this.name = name;
         this.ID = ID;
     }

@@ -10,11 +10,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class WidgetCustomAdapter extends RecyclerView.Adapter<WidgetCustomAdapter.ViewHolder>{
-    private ArrayList<Widget> widgets;
+public class PersonCustomAdapter extends RecyclerView.Adapter<PersonCustomAdapter.ViewHolder>{
+    private ArrayList<Person> people;
 
-    public WidgetCustomAdapter(ArrayList<Widget> widgets) {
-        this.widgets = widgets;
+    public PersonCustomAdapter(ArrayList<Person> people) {
+        this.people = people;
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
@@ -22,7 +22,7 @@ public class WidgetCustomAdapter extends RecyclerView.Adapter<WidgetCustomAdapte
         private TextView idView;
         public ViewHolder(@NonNull View view) {
             super(view);
-            textView = view.findViewById(R.id.widgetIdTextView);
+            textView = view.findViewById(R.id.widgetNameTextView);
             idView = view.findViewById(R.id.widgetIdTextView);
         }
 
@@ -45,13 +45,13 @@ public class WidgetCustomAdapter extends RecyclerView.Adapter<WidgetCustomAdapte
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.getTextView().setText(widgets.get(position).getName());
-        holder.getIdView().setText(widgets.get(position).getID());
+        holder.getTextView().setText(people.get(position).getName());
+        holder.getIdView().setText(people.get(position).getID());
     }
 
     @Override
     public int getItemCount() {
-        return widgets.size();
+        return people.size();
     }
 
 }
